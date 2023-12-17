@@ -6,7 +6,27 @@ using System.Threading.Tasks;
 
 namespace Project_partB_Horbach_program
 {
-    internal class CheckOutLog
+    public class CheckOutLog
     {
+        // Час виселення
+        public DateTime CheckOutTime { get; set; }
+
+        // Інформація про гостя
+        public Guest Guest { get; }
+
+        // Інформація про номер
+        public Room Room { get; }
+
+        // Інформація про працівника готелю, який виселив  гостя
+        public HotelStaff CheckedOutBy { get; }
+
+        // Конструктор класу
+        public CheckOutLog(DateTime checkoutTime, Guest guest, Room room, HotelStaff checkedOutBy)
+        {
+            CheckOutTime = checkoutTime;
+            Guest = guest;
+            Room = room;
+            CheckedOutBy = checkedOutBy;
+        }
     }
 }
