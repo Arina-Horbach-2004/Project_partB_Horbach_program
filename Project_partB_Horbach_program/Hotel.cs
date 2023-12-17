@@ -122,8 +122,15 @@ namespace Project_partB_Horbach_program
     {
         { RoomType.Single, 1 },
         { RoomType.Double, 2 },
-        // Add more room types as needed
-    };
+        { RoomType.Familyroom, 4 },
+        { RoomType.BusinessClass, 5 },
+        { RoomType.Withseparatebeds, 2 },
+        { RoomType.Villa, 7 },
+        { RoomType.Oceanview, 8 },
+        { RoomType.Standard, 4 },
+        { RoomType.Luxury, 2 },
+        { RoomType.Longstay, 3 }
+        };
 
         public void RegisterGuest(Guest guest, HotelStaff checkedInBy, Room room, int stayDuration)
         {
