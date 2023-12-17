@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace Project_partB_Horbach_program
 {
-    internal interface IPerson
+    public interface IPerson
     {
+        string FirstName { get; set; }
+        string LastName { get; set; }
+        string ContactNumber { get; set; }
     }
 }
