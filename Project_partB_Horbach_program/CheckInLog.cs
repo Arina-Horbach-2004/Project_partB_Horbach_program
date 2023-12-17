@@ -6,7 +6,27 @@ using System.Threading.Tasks;
 
 namespace Project_partB_Horbach_program
 {
-    internal class CheckInLog
+    // Клас, що представляє запис про реєстрацію гостя в готелі
+    public class CheckInLog
     {
+        // Час реєстрації
+        public DateTime CheckInTime { get; set; }
+        // Інформація про гостя
+        public Guest Guest { get; }
+
+        // Інформація про номер
+        public Room Room { get; }
+
+        // Інформація про працівника готелю, який зареєстрував гостя
+        public HotelStaff CheckedInBy { get; }
+
+        // Конструктор класу
+        public CheckInLog(DateTime checkInTime, Guest guest, Room room, HotelStaff checkedInBy)
+        {
+            CheckInTime = checkInTime;
+            Guest = guest;
+            Room = room;
+            CheckedInBy = checkedInBy;
+        }
     }
 }
