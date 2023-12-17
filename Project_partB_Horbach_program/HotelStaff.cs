@@ -48,9 +48,9 @@ namespace Project_partB_Horbach_program
             StaffPosition = position;
         }
 
-        public string Get_Full_Name()
+        public override string Get_Full_Name()
         {
-            return $"{FirstName} {LastName}".Trim();
+            return $"Guest: {base.Get_Full_Name()}";
         }
 
         public string GetContactNumber()

@@ -84,5 +84,10 @@ namespace Project_partB_Horbach_program
                 } while (true);
             }
         }
+
+        public virtual string Get_Full_Name()
+        {
+            return $"{FirstName} {LastName}";
+        }
     }
 }

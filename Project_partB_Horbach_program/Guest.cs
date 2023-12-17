@@ -100,9 +100,10 @@ namespace Project_partB_Horbach_program
             return $"Guest Id: {Id}, Full Name: {Get_Full_Name()}, Birthdate: {BirthDate.ToShortDateString()}, Contact Number: {ContactNumber}{checkOutInfo}{checkedOutByInfo}";
         }
 
-        public string Get_Full_Name()
+        // Перевизначення методу GetFullName
+        public override string Get_Full_Name()
         {
-            return $"{FirstName} {LastName}".Trim();
+            return $"Guest: {base.Get_Full_Name()}";
         }
 
         public string GetContactNumber()
