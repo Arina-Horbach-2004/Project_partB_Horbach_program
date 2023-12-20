@@ -31,7 +31,6 @@ namespace Project_partB_Horbach_program
 
         //public List<HotelStaff> dismissedStaff; // Список звільненого персоналу готелю.
 
-        private List<HotelStaff> staff = new List<HotelStaff>();
         private List<HotelStaff> dismissedStaff = new List<HotelStaff>();
 
         public Hotel(string country, string city)
