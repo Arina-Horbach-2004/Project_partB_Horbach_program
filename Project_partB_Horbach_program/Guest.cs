@@ -101,9 +101,9 @@ namespace Project_partB_Horbach_program
         }
 
         // Перевизначення методу GetFullName
-        public override string Get_Full_Name()
+        public  string Get_Full_Name()
         {
-            return $"Guest: {base.Get_Full_Name()}";
+            return base.Get_Full_Name();
         }
 
         public string GetContactNumber()

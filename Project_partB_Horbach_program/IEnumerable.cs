@@ -8,7 +8,7 @@ using Project_partB_Horbach_program;
 
 namespace Project_partB_Horbach_program
 {
-    public interface IMyEnumerable
+    public interface IEnumerable
     {
         IEnumerator GetEnumerator();
     }

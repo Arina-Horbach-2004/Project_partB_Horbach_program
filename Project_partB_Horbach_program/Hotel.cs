@@ -8,7 +8,7 @@ using Project_partB_Horbach_program;
 
 namespace Project_partB_Horbach_program
 {
-    public class Hotel : IHotel, IMyEnumerable
+    public class Hotel : IHotel, System.Collections.IEnumerable
     {
         public string Country { get; set; } // Властивість для зберігання країни, до якої належить готель.
 
@@ -25,11 +25,10 @@ namespace Project_partB_Horbach_program
         public List<Guest> CheckedOutGuests { get; set; } // Список гостей, які вже виселилися з готелю.
 
         public List<CheckInLog> CheckInLogs { get; set; }
+
         public List<CheckOutLog> CheckOutLogs { get; set; }
 
-        //public List<HotelStaff> staff; // Список активного персоналу готелю.
-
-        //public List<HotelStaff> dismissedStaff; // Список звільненого персоналу готелю.
+        public List<HotelStaff> staff; // Список активного персоналу готелю.
 
         private List<HotelStaff> dismissedStaff = new List<HotelStaff>();
 
@@ -293,7 +292,7 @@ namespace Project_partB_Horbach_program
         {
             int checkedInGuestsCount = GetCheckedInGuests().Count;
             int checkedOutGuestsCount = GetCheckedOutGuests().Count;
-            return $"{Country}, {City} - {GetRoomList().Count} кімнат, {GetStaffList().Count} персонал, {GetGuestList().Count} гостей в готелі з яких : {checkedInGuestsCount} гостей (Checked In), {checkedOutGuestsCount} гостей (Checked Out)";
+            return $"{Country}, {City} - {GetRoomList().Count} кімнат, {GetStaffList().Count} персонал в готелі з яких: {GetDismissedStaff().Count} звільненний персонал, {GetGuestList().Count} гостей в готелі з яких : {checkedInGuestsCount} гостей (Checked In), {checkedOutGuestsCount} гостей (Checked Out)";
         }
     }
 }

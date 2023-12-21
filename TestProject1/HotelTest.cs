@@ -450,13 +450,14 @@ namespace TestProject1
             var expectedRoomCount = hotel.GetRoomList().Count;
             var expectedStaffCount = hotel.GetStaffList().Count;
             var expectedGuestCount = hotel.GetGuestList().Count;
-            var expectedResult = $"Country, City - {expectedRoomCount} кімнат, {expectedStaffCount} персонал, {expectedGuestCount} гостей в готелі з яких : {hotel.GetCheckedInGuests().Count} гостей (Checked In), {hotel.GetCheckedOutGuests().Count} гостей (Checked Out)";
+            var expectedResult = $"Country, City - {expectedRoomCount} кімнат, {expectedStaffCount} персонал в готелі з яких: {hotel.GetDismissedStaff().Count} звільненний персонал, {expectedGuestCount} гостей в готелі з яких : {hotel.GetCheckedInGuests().Count} гостей (Checked In), {hotel.GetCheckedOutGuests().Count} гостей (Checked Out)";
 
             // Assert
             Assert.AreEqual(expectedResult, actualResult);
             Assert.AreEqual(expectedRoomCount, 2);
             Assert.AreEqual(expectedStaffCount, 1);
             Assert.AreEqual(hotel.GetCheckedInGuests().Count, 2);
+            Assert.AreEqual(hotel.GetDismissedStaff().Count, 0);
             Assert.AreEqual(hotel.GetCheckedOutGuests().Count, 0);
         }
 

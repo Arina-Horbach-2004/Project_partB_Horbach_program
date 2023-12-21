@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Project_partB_Horbach_program.CheckInLog">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAIAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>CheckInLog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Project_partB_Horbach_program.CheckOutLog">
+    <Position X="8.75" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAABAAAAAAEAg=</HashCode>
+      <FileName>CheckOutLog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Project_partB_Horbach_program.Guest">
+    <Position X="0.5" Y="4.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAACEFAAAgIABAAAAAAAACQAAAAAAAgAEhQAAAABEAg=</HashCode>
+      <FileName>Guest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Project_partB_Horbach_program.Hotel">
+    <Position X="11.75" Y="0.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AACAAgIgAAACARCcAAAAYCACAIIAQAAAAQCAAhEQwAg=</HashCode>
+      <FileName>Hotel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Project_partB_Horbach_program.HotelStaff">
+    <Position X="4.25" Y="4.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>CAACAFAIAgAAAAAAAAAAAAQQEABAAAAAAAAAAAABAAg=</HashCode>
+      <FileName>HotelStaff.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Project_partB_Horbach_program.PersonBase">
+    <Position X="2.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAFAAAgBQAAAAAAAAAAAAAAAAAAAAAAAACAAAAAg=</HashCode>
+      <FileName>PersonBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Project_partB_Horbach_program.Room">
+    <Position X="8.75" Y="2.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAADAAEAAIAYoAAIAAAAAAAAQAAAAAAAAg=</HashCode>
+      <FileName>Room.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Project_partB_Horbach_program.IHotel">
+    <Position X="4.5" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AACAAgIAAAACAAAEAAAAIAAAAIAAQAAAAACAABAAAAA=</HashCode>
+      <FileName>IHotel.cs.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Project_partB_Horbach_program.IMyEnumerable">
+    <Position X="7" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IMyEnumerable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Project_partB_Horbach_program.IPerson">
+    <Position X="6.75" Y="1.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>IPerson.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="Project_partB_Horbach_program.RoomType">
+    <Position X="11.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAACAAAAACBAIQCgAAAAAAAACAAAEA=</HashCode>
+      <FileName>RoomType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Project_partB_Horbach_program.StaffPosition">
+    <Position X="8.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAEAAAAAAAAAAAAAAACEABAAAAAgAAAABEAA=</HashCode>
+      <FileName>StaffPossition.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

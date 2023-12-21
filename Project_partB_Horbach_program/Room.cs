@@ -15,7 +15,7 @@ namespace Project_partB_Horbach_program
         public bool IsCheckedIn { get; set; }
         public double Rate { get; set; }
         public Guest CurrentGuest { get; set; }
-        public int MaxGuests { get; set; }  // Добавьте это поле для хранения максимального количества гостей
+        public int MaxGuests { get; set; }  
 
         public List<Guest> Guests { get; set; } = new List<Guest>();
 
@@ -26,7 +26,7 @@ namespace Project_partB_Horbach_program
             Type = type;
             IsOccupied = false;
             CurrentGuest = null;
-            MaxGuests = GetMaxGuestsForRoomType(type);  // Установите максимальное количество гостей при создании комнаты
+            MaxGuests = GetMaxGuestsForRoomType(type); 
         }
 
         public void CheckIn(Guest guest)
